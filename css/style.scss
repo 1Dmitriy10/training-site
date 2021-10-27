@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin text {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    opacity: 0.6;
+}
+
+@mixin text-title {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+
+$colBlack: #000000;
+
+$colblue: #1f3f68;
+
+$colwhite: #ffffff;
+
+.wrap {
+    margin: 0 auto;
+    max-width: 1140px;
+    // outline: 1px solid blue;
+    font-family: "Roboto", sans-serif;
+    @media (max-width: 1160px) {
+        max-width: 704px;
+    }
+    @media (max-width: 730px) {
+        max-width: 342px;
+    }
+}
+
+@import "blocks/_header.scss";
+
+@import "blocks/_help.scss";
+
+@import "blocks/_project.scss";
+
+@import "blocks/_footer.scss";
+
+@import "blocks/_header-contacts.scss";
+
+@import "blocks/_contact-title.scss";
+
+@import "blocks/_contacts.scss";

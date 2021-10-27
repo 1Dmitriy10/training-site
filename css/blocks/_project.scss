@@ -1,0 +1,116 @@
+.project {
+    background: #e5e5e5;
+}
+
+.wrap__project {
+    padding-bottom: 112px;
+}
+
+.item-1 {
+    margin-top: 64px;
+    width: 100%;
+    height: 480px;
+    background-image: url("../img/project-item-1.png");
+    @media (max-width: 1160px) {
+        height: 296px;
+        background-size: contain;
+    }
+    @media (max-width: 730px) {
+        background-size: contain;
+        height: 144px;
+    }
+}
+
+.project__header {
+    padding-bottom: 32px;
+    text-align: center;
+    @include text-title;
+    color: $colBlack;
+    @media (max-width: 730px) {
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        color: #000000;
+    }
+}
+
+.project__text {
+    @include text;
+    color: $colBlack;
+    max-width: 750px;
+    text-align: center;
+    @media (max-width: 730px) {
+        color: #222222;
+    }
+}
+
+.project__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project__box {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 32px;
+    @media (max-width: 1160px) {
+        justify-content: center;
+    }
+}
+
+.item-2 {
+    width: 554px;
+    height: 417px;
+    background-image: url("../img/project-item-2.png");
+    @media (max-width: 1160px) {
+        height: 253px;
+        width: 336px;
+        background-size: contain;
+    }
+}
+
+.item-3 {
+    width: 554px;
+    height: 417px;
+    background-image: url("../img/project-item-3.png");
+    @media (max-width: 1160px) {
+        height: 253px;
+        width: 336px;
+        background-size: contain;
+    }
+}
+
+.project__item__text {
+    position: absolute;
+    font-size: 32px;
+    line-height: 46px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+
+    @media (max-width: 730px) {
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
+
+.item-1__text {
+    top: 64px;
+    right: 64px;
+
+    @media (max-width: 730px) {
+        top: 16px;
+        right: 16px;
+    }
+}
+
+.project__box__item {
+    position: relative;
+}
+
+.item-2__text {
+    top: 32px;
+    left: 32px;
+}

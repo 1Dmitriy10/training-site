@@ -1,0 +1,39 @@
+.contact-title {
+    background-image: url("../img/bg__contact-us.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrap__contact-us {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-us__title {
+    font-size: 44px;
+    line-height: 74px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    padding-top: 51px;
+    padding-bottom: 16px;
+    @media (max-width: 730px) {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: #ffffff;
+    }
+}
+
+.contact-us__text {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.6);
+    max-width: 780px;
+}
